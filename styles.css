@@ -26,11 +26,21 @@
 }
 
 .main-container__form fieldset {
+  width: 60%;
   padding: 1em;
 }
 
-.form-row {
-  margin-bottom: 1em;  
+.main-container__form .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  margin-bottom: 1em;
+}
+
+.main-container__form .form-row > label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 @media screen and (max-width: 500px) {
