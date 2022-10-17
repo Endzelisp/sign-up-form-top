@@ -1,6 +1,7 @@
 :root {
  --border-input-clr: #3b3b3b;
- --outline-input-clr-focus: #2742db; 
+ --outline-input-clr-focus: #2742db;
+ --aside-txt-clr: #fcd9c0;
 }
 
 .main-container {
@@ -11,11 +12,31 @@
   flex: 1;
   display: flex;
   align-items: flex-end;
+  position: relative;
+  overflow: hidden;
   width: max(300px, 30vw);
   height: 100vh;
-  background-image: url(./img/deepmind-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: 20%;
+  transition: all 200ms ease-in-out;
+}
+
+.main-container__aside-img img {
+  position: absolute;
+  height: 100vh;
+  width: auto;
+}
+
+.main-container__aside-img p {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.main-container__aside-img a,
+.main-container__aside-img p {
+  color: var(--aside-txt-clr);
+  text-shadow: 1px 2px 1px #151515;
 }
 
 .main-container__form {
