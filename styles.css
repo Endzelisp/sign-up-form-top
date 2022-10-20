@@ -3,6 +3,7 @@
  --outline-input-clr-focus: #2742db;
  --aside-txt-clr: #fcd9c0;
  --para-fnt-sz: 1.125rem;
+ --input-fnt-sz: 1rem;
 }
 
 .main-container {
@@ -79,6 +80,10 @@
 }
 
 .main-container__form .form-row input {
+  padding: 0 0.35em;
+  margin: 0.5em 0 0;
+  height: 2.5em;
+  font-size: var(--input-fnt-sz);
   appearance: none;
   border-radius: 5px;
   border: none;
