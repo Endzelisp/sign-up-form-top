@@ -2,6 +2,7 @@
  --border-input-clr: #3b3b3b;
  --outline-input-clr-focus: #2742db;
  --aside-txt-clr: #fcd9c0;
+ --para-fnt-sz: 1.125rem;
 }
 
 .main-container {
@@ -43,15 +44,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0.75rem;
+  padding: 3rem;
+}
+
+.main-container__form > div:first-of-type {
+  /* form text header */
+  width: 70%;
+  font-size: var(--para-fnt-sz);
 }
 
 .main-container__form fieldset {
   width: 60%;
-  margin-bottom: 1rem;
-  padding: 1em;
+  margin: 0 0 1em;
+  padding: 0;
   border: none;
   box-shadow: 0 7px 10px -10px #333;
+}
+
+.main-container__form fieldset > legend {
+  margin: 0 0 2em;
 }
 
 .main-container__form .form-row {
