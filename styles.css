@@ -60,7 +60,7 @@
 
 .main-container__form > h1 {
 /* form heading */
-  font-size: var(--para-fnt-sz);
+  font-family: var(--title-fnt-fam);
   font-size: var(--heading-fnt-sz);
 }
 
