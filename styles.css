@@ -57,7 +57,6 @@
 }
 
 .main-container__form fieldset {
-  width: 60%;
   margin: 0 0 1em;
   padding: 0;
   border: none;
@@ -71,7 +70,8 @@
 .main-container__form .form-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 3em;
+  justify-content: space-between;
+  gap: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -85,6 +85,7 @@
   padding: 0 0.35em;
   margin: 0.5em 0 0;
   height: 2.5em;
+  width: 32ch;
   font-size: var(--input-fnt-sz);
   appearance: none;
   border-radius: 5px;
@@ -118,10 +119,6 @@
 
   .main-container__form fieldset {
     width: 100%;
-  }
-
-  .main-container__form .form-row {
-    gap: 1em;
   }
 
   .main-container__aside-img {
