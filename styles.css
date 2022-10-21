@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Rubik&family=Ubuntu&display=swap');
+
 :root {
  --border-input-clr: #3b3b3b;
  --outline-input-clr-focus: #2742db;
@@ -5,6 +7,9 @@
  --para-fnt-sz: 1.125rem;
  --input-fnt-sz: 1rem;
  --submit-btn-bg-clr: #b15f2e;
+ --title-fnt-fam: 'Freehand', cursive;
+ --form-fnt-fam: 'Ubuntu', sans-serif;
+ --submit-fnt-fam: 'Rubik', sans-serif;
 }
 
 .main-container {
@@ -49,6 +54,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2em;
+  font-family: var(--form-fnt-fam);
 }
 
 .main-container__form > div:first-of-type {
@@ -102,7 +108,7 @@
 .main-container__form form > button[type="submit"] {
   margin: 1em 0;
   padding: 0.5em 2em;
-  /* font-family: ; */
+  font-family: var(--submit-fnt-fam);
   background-color: var(--submit-btn-bg-clr);
   color: var(--aside-txt-clr);
   border-radius: 0.4em;
