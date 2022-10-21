@@ -24,15 +24,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: auto;
+  height: 100%;
 }
 
 .main-container__aside-img p {
   position: relative;
   z-index: 100;
-  width: 100%;
   margin-bottom: 1em;
+  width: 100%;
   text-align: center;
 }
 
@@ -58,8 +58,8 @@
 
 .main-container__form fieldset {
   margin: 0 0 1em;
-  padding: 0;
   border: none;
+  padding: 0;
   box-shadow: 0 7px 10px -10px #333;
 }
 
@@ -82,16 +82,16 @@
 }
 
 .main-container__form .form-row input {
-  padding: 0 0.35em;
   margin: 0.5em 0 0;
-  height: 2.5em;
-  width: 32ch;
-  font-size: var(--input-fnt-sz);
-  appearance: none;
-  border-radius: 5px;
   border: none;
   border-right: 1px solid var(--border-input-clr);
   border-bottom: 1px solid var(--border-input-clr);
+  padding: 0 0.35em;
+  width: 32ch;
+  height: 2.5em;
+  font-size: var(--input-fnt-sz);
+  appearance: none;
+  border-radius: 5px;
 }
 
 .main-container__form .form-row input:focus {
@@ -105,8 +105,8 @@
   }
 
   .main-container__form {
-    min-height: 70vh;
     padding: 1em;
+    min-height: 70vh;
   }
 
   .main-container__form > div:first-of-type {
@@ -123,13 +123,13 @@
 
   .main-container__aside-img {
     flex: none;
-    min-height: 30vh;
     width: 100%;
+    min-height: 30vh;
   }
 
   .main-container__aside-img img {
     top: -100%;
-    height: auto;
     width: 100%;
+    height: auto;
   }
 }
