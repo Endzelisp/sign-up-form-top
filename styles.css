@@ -57,10 +57,10 @@
   font-family: var(--form-fnt-fam);
 }
 
-.main-container__form > div:first-of-type {
+.main-container__form > h1 {
 /* form text header */
-  width: 70%;
   font-size: var(--para-fnt-sz);
+  font-size: 2rem;
 }
 
 .main-container__form fieldset {
@@ -123,15 +123,6 @@
   .main-container__form {
     padding: 1em;
     min-height: 70vh;
-  }
-
-  .main-container__form > div:first-of-type {
-  /* form text header */
-	  width: 100%;
-  }
-
-  .main-container__form > div:first-of-type p{
-    text-align: justify;
   }
 
   .main-container__form fieldset {
