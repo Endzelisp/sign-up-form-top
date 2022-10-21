@@ -10,6 +10,7 @@
  --title-fnt-fam: 'Freehand', cursive;
  --form-fnt-fam: 'Ubuntu', sans-serif;
  --submit-fnt-fam: 'Rubik', sans-serif;
+ --heading-fnt-sz: clamp(1.5rem, 2vw + 1rem, 2.5rem);
 }
 
 .main-container {
@@ -58,9 +59,9 @@
 }
 
 .main-container__form > h1 {
-/* form text header */
+/* form heading */
   font-size: var(--para-fnt-sz);
-  font-size: 2rem;
+  font-size: var(--heading-fnt-sz);
 }
 
 .main-container__form fieldset {
@@ -77,15 +78,13 @@
 .main-container__form .form-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.5em;
+  gap: 3vmax;
   margin-bottom: 1em;
 }
 
 .main-container__form .form-row > label {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 .main-container__form .form-row input {
