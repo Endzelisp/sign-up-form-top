@@ -73,10 +73,6 @@
   box-shadow: 0 7px 10px -10px #333;
 }
 
-.main-container__form fieldset > legend {
-  margin: 0 0 2em;
-}
-
 .main-container__form fieldset > p:first-of-type {
   font-size: small;
   padding: 1.5em 0;
