@@ -23,13 +23,14 @@
       <form action="#" method="post">
         <fieldset>
           <legend>Let's do this!</legend>
+          <p>Required fields have an asterisk *</p>
           <div class="form-row">
             <div>
               <input
                 type="text"
                 name="first-name"
                 id="first-name"
-                placeholder="First name"
+                placeholder="First name *"
                 autocomplete="given-name"
                 autofocus
                 required
@@ -41,7 +42,7 @@
                 type="text"
                 name="last-name"
                 id="last-name"
-                placeholder="Last name"
+                placeholder="Last name *"
                 autocomplete="family-name"
                 required
               >
@@ -54,7 +55,7 @@
                 type="email"
                 name="email"
                 id="email"
-                placeholder="mail@example.com"
+                placeholder="mail@example.com *"
                 autocomplete="email"
                 required
               >
@@ -76,19 +77,25 @@
                 type="password"
                 name="password"
                 id="password"
+                min="8"
+                max="20"
+                placeholder="Password *"
                 required
               >
               <label for="password">PASSWORD</label>
-              <span></span>
             </div>
             <div>
               <input
                 type="password"
                 name="password-check"
                 id="password-check"
+                min="8"
+                max="20"
                 autocomplete="new-password"
+                placeholder="Confirm your password *"
                 required
               >
+              <span></span>
               <label for="password-check">CONFIRM PASSWORD</label>
             </div>
           </div>
