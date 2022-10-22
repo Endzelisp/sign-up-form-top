@@ -15,25 +15,22 @@ function capitalize (str) {
   return `${firstLtrCap}${remainingLtrs}`
 };
 
+function formatName (elem) {
+  let target = elem.target
+  let userName = target.value;
+  let userNameArray = userName.split(' ');
+  let userNameArrayCap = userNameArray.map(item => capitalize(item));
+  let userNameCap = userNameArrayCap.join(' ');
+  target.value = userNameCap;
+}
+
 function passwordCheck () {
   return passwordEl.value === passwordCheckEl.value;
 };
 
-firstName.addEventListener('input', () => {
-  let userName = firstName.value;
-  let userNameArray = userName.split(' ');
-  let userNameArrayCap = userNameArray.map(item => capitalize(item));
-  let userNameCap = userNameArrayCap.join(' ');
-  firstName.value = userNameCap;
-});
+firstName.addEventListener('input', formatName);
 
-lastName.addEventListener('input', () => {
-  let userName = lastName.value;
-  let userNameArray = userName.split(' ');
-  let userNameArrayCap = userNameArray.map(item => capitalize(item));
-  let userNameCap = userNameArrayCap.join(' ');
-  lastName.value = userNameCap;
-});
+lastName.addEventListener('input', formatName);
 
 passwordCheckEl.addEventListener('input', () => {
   if (passwordCheck()) {
