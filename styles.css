@@ -121,6 +121,16 @@
   opacity: 1;
 }
 
+.main-container__form .form-row input[name="password"] + span {
+  margin: 1em 0 0;
+  font-size: small;
+  opacity: 0;
+}
+
+.main-container__form .form-row input[name="password"]:focus + span {
+  opacity: 1;
+}
+
 .main-container__form .form-row input[type="password"]:invalid {
   outline: 2px solid var(--outline-pwd-clr-invalid);
 }
