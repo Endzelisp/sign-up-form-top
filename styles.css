@@ -5,10 +5,12 @@
  --outline-input-clr-focus: #2742db;
  --input-bg-clr-focus: #e6e6e6;
  --outline-pwd-clr-invalid: #eb370a;
- --aside-txt-clr: #fcd9c0;
+ --aside-txt-clr: #fff1e7;
  --para-fnt-sz: 1.125rem;
  --input-fnt-sz: 1rem;
  --submit-btn-bg-clr: #b15f2e;
+ --submit-btn-bg-clr-active: #944416;
+ --link-clr: #b15f2e;
  --title-fnt-fam: 'Freehand', cursive;
  --form-fnt-fam: 'Ubuntu', sans-serif;
  --submit-fnt-fam: 'Rubik', sans-serif;
@@ -45,10 +47,16 @@
   text-align: center;
 }
 
-.main-container__aside-img a,
 .main-container__aside-img p {
   color: var(--aside-txt-clr);
+  font-size: medium;
   text-shadow: 1px 2px 1px #151515;
+}
+
+.main-container__aside-img a {
+  color: var(--link-clr);
+  font-size: medium;
+  text-decoration: none;
 }
 
 .main-container__form {
@@ -142,11 +150,29 @@
 
 .main-container__form form > button[type="submit"] {
   margin: 1em 0;
+  border: none;
   padding: 0.5em 2em;
   font-family: var(--submit-fnt-fam);
-  background-color: var(--submit-btn-bg-clr);
   color: var(--aside-txt-clr);
+  background-color: var(--submit-btn-bg-clr);
   border-radius: 0.4em;
+  appearance: none;
+  cursor: pointer;
+}
+
+.main-container__form form > button[type="submit"]:active {
+  background-color: var(--submit-btn-bg-clr-active);
+}
+
+.main-container__form form > button[type="submit"]:hover {
+  box-shadow: 1px 1px 7px #6d6d6d;
+}
+
+.main-container__form > p > a, 
+.main-container__form > p > a:visited,
+.main-container__form > p > a:active {
+  text-decoration: none;
+  color: var(--link-clr);
 }
 
 @media screen and (max-width: 500px) {
