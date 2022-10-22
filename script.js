@@ -13,7 +13,17 @@ function passwordCheck () {
 passwordCheckEl.addEventListener('input', () => {
   if (passwordCheck()) {
     verificationMessage.textContent = `Password match`;
+    verificationMessage.style.color = 'black';
   } else {
     verificationMessage.textContent = `Password didn't match`;
+    verificationMessage.style.color = 'red';
   }
 });
+
+submitBtnEl.addEventListener('pointerdown', () => {
+  if (!passwordCheck()) {
+    passwordCheckEl.setCustomValidity('Password did not match');
+  } else {
+    passwordCheckEl.setCustomValidity('');
+  }
+})
