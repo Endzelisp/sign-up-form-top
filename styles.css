@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Freehand&family=Rubik&family=Ubuntu&display=swap');
 
 :root {
- --border-input-clr: #3b3b3b;
+ --border-input-clr: #9e9e9e;
  --outline-input-clr-focus: #2742db;
+ --input-bg-clr-focus: #e6e6e6;
+ --outline-pwd-clr-invalid: #eb370a;
  --aside-txt-clr: #fcd9c0;
  --para-fnt-sz: 1.125rem;
  --input-fnt-sz: 1rem;
@@ -102,6 +104,11 @@
 
 .main-container__form .form-row input:focus {
   outline: 2px solid var(--outline-input-clr-focus);
+  background-color: var(--input-bg-clr-focus);
+}
+
+.main-container__form .form-row input[type="password"]:invalid {
+  outline: 2px solid var(--outline-pwd-clr-invalid);
 }
 
 .main-container__form form > button[type="submit"] {
