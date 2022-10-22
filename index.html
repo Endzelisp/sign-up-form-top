@@ -24,7 +24,7 @@
         <fieldset>
           <legend>Let's do this!</legend>
           <div class="form-row">
-            <label for="first-name">FIRST NAME
+            <div>
               <input
                 type="text"
                 name="first-name"
@@ -32,53 +32,65 @@
                 placeholder="First name"
                 autocomplete="given-name"
                 autofocus
-                required>
-            </label>
-            <label for="last-name">LAST NAME
+                required
+              >
+              <label for="first-name">FIRST NAME</label>
+            </div>
+            <div>
               <input
                 type="text"
                 name="last-name"
                 id="last-name"
                 placeholder="Last name"
                 autocomplete="family-name"
-                required>
-            </label>
+                required
+              >
+              <label for="last-name">LAST NAME</label>
+            </div>
           </div>
           <div class="form-row">
-            <label for="email">EMAIL
+            <div>
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="mail@example.com"
                 autocomplete="email"
-                required>
-            </label>
-            <label for="phone-number">PHONE NUMBER
+                required
+              >
+              <label for="email">EMAIL</label>
+            </div>
+            <div>
               <input
                 type="tel"
                 name="phone-number"
                 id="phone-number"
-                placeholder="Phone number">
-            </label>
+                placeholder="Phone number"
+              >
+              <label for="phone-number">PHONE NUMBER</label>
+            </div>
           </div>
           <div class="form-row">
-            <label for="password">PASSWORD
+            <div>
               <input
                 type="password"
                 name="password"
                 id="password"
-                required>
+                required
+              >
+              <label for="password">PASSWORD</label>
               <span></span>
-            </label>
-            <label for="password-check">CONFIRM PASSWORD
+            </div>
+            <div>
               <input
                 type="password"
                 name="password-check"
                 id="password-check"
                 autocomplete="new-password"
-                required>
-            </label>
+                required
+              >
+              <label for="password-check">CONFIRM PASSWORD</label>
+            </div>
           </div>
         </fieldset>
         <button type="submit">Create Account</button>

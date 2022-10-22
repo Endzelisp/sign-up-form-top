@@ -84,9 +84,18 @@
   margin-bottom: 1em;
 }
 
-.main-container__form .form-row > label {
+.main-container__form .form-row > div {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.main-container__form .form-row label {
+  position: absolute;
+  top: -1em;
+  opacity: 0;
+  transition: all 150ms ease-in;
 }
 
 .main-container__form .form-row input {
@@ -105,6 +114,10 @@
 .main-container__form .form-row input:focus {
   outline: 2px solid var(--outline-input-clr-focus);
   background-color: var(--input-bg-clr-focus);
+}
+
+.main-container__form .form-row input:focus ~ label {
+  opacity: 1;
 }
 
 .main-container__form .form-row input[type="password"]:invalid {
