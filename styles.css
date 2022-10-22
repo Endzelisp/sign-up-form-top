@@ -129,6 +129,11 @@
   outline: 2px solid var(--outline-pwd-clr-invalid);
 }
 
+.main-container__form .form-row input[name="password-check"] + span {
+  margin: 0.85em 0 0;
+  font-size: small;
+}
+
 .main-container__form form > button[type="submit"] {
   margin: 1em 0;
   padding: 0.5em 2em;
