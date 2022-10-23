@@ -218,6 +218,10 @@
     height: auto;
   }
 
+  .main-container__aside-img > div.logo {
+  height: 4rem;
+}
+
   .main-container__form {
     padding: 1em;
     min-height: 70vh;
