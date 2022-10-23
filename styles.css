@@ -15,7 +15,8 @@
  --title-fnt-fam: 'Freehand', cursive;
  --form-fnt-fam: 'Ubuntu', sans-serif;
  --submit-fnt-fam: 'Rubik', sans-serif;
- --heading-fnt-sz: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+ --heading-fnt-sz: clamp(1.75rem, 2vw + 1rem, 2.5rem);
+ --logo-fnt-sz: clamp(1.5rem, 2vw + 1rem, 2.5rem);
 }
 
 .main-container {
@@ -60,7 +61,7 @@
 .main-container__aside-img > div.logo p {
   width: min-content;
   font-family: var(--aside-logo-fnt-fam);
-  font-size: 2rem;
+  font-size: var(--logo-fnt-sz);
 }
 
 .main-container__aside-img p {
